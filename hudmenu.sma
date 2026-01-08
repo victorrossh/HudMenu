@@ -129,6 +129,6 @@ public LoadSettings(id){
 		if(str_to_num(values[2])) toggle_keys(id);
 		if(!str_to_num(values[3])) toggle_timer(id);
 		if(!str_to_num(values[4])) toggle_medals(id);
-		if(get_bool_speclist(id) != str_to_num(values[5])) toggle_speclist(id);
+		if(!str_to_num(values[5])) toggle_speclist(id);
 	}
 }
