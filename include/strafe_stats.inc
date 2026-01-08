@@ -13,3 +13,5 @@ native toggle_stats(id);
 
 native get_bool_pre(id);
 native toggle_pre(id);
+
+native open_stats_menu(id);
