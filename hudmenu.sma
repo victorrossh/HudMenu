@@ -70,16 +70,14 @@ public hud_menu_handler(id, menu, item){
 		return PLUGIN_HANDLED;
 	}
 
-	switch(item)
-	{
+	switch(item){
 		case 0: toggle_speed(id);
 		case 1: toggle_fps(id);
 		case 2: toggle_keys(id);
 		case 3: toggle_timer(id);
 		case 4: toggle_medals(id);
 		case 5: toggle_speclist(id);
-		case 6:
-		{
+		case 6:{
 			menu_destroy(menu);
 			open_stats_menu(id);
 			return PLUGIN_HANDLED;
@@ -119,8 +117,7 @@ public LoadSettings(id){
 	get_user_name(id, szName, charsmax(szName));
 
 	new szData[64];
-	if (fvault_get_data(g_szVault, szName, szData, charsmax(szData)))
-	{
+	if (fvault_get_data(g_szVault, szName, szData, charsmax(szData))){
 		new values[6][8];
 		explode_string(szData, "#", values, sizeof(values), sizeof(values[]));
 
